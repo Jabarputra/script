@@ -52,9 +52,9 @@ mkdir -p /etc/xray/noobz/akun
 fi
 function create(){
 clear
-echo -e "${RED}╭═════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC}${RED} │ $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════╯${NC}"
 read -p "Username: " user
 read -p "Password: " pass
 read -p "Exp (0 for unlimited days):" exp
@@ -83,7 +83,7 @@ echo -e "EXP DAYS: $exp DAYS"
 echo -e "tcp_std port:  8880"
 echo -e "tcp_ssl port: 8443"
 echo -e "${GREEN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
-echo -e "Example config TCP_STD 8880"
+echo -e "Example config TCP_STD 8080"
 echo -e "${GREEN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
 echo ""
 echo -e "EJ/AhFFMP73OIMvFG+nQUlel8kRYqOqu1FaMMv7NcCEZoadYxA+eSrhVt/ds+DzKWoepCJaiR497IFCCULAwbiRqDUXW/HX+pOgyy+fBOqaheKI1AQg1xd6yxdi85QuI1HjKW54T6hmJlU5EZrs/vS4sOElDtk1xSsrKGiGjWkJiYJp0mUYrx4sjNNcaigiv+cHo/1U17NKb3La57i56Gp/ecwpCaLXznFAjZ9T2Jv0CpTy9ec65E2/G68XS8HDb76fUZSeG5lVcIZpvW6kTnDLa0ZyPZsDYPn3MEwSQa/ikVOS7hiH6tx9duscX+l6oRXplyt9gMbeTbFT/7h+vf37U9m0cCpwQ28ecr8o5Izpiu83AiEOlDWHdD+c9UaJYdyt/Qc+3O3r8Fdm+1pnHChNrJWtMDcjVj9QxEGrFpB4EVwGkw37dQNExWLDf/3T0fLdXsfXWOYl5NoUInUoW7LpV/k1Vla1X1UJlRq7xh+LXLZULtOBr28Zdvy4gRhw2Cfyr+SqQy1ar1hLUp6N36L1PGL5c+lU31tMoHTGWYoJfKURG4c+vAQKZcbDYng7cQd72koWNgr3HL1o+Oe5Cw2A13Gpe34slJe+kaQ=="
@@ -105,17 +105,17 @@ menu
 
 function delete(){
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• DELETE NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• DELETE NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 grep -E "^### " "/etc/xray/noob" | cut -d ' ' -f 2-3 | nl -s ') '
 read -p "username :" user
 noobzvpns --remove-user $user
 expi=`date -d "$exp days" +"%Y-%m-%d"`
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• DELETE NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• DELETE NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -e "$WH USERNAME $user HAS BEEN DELETE $NC"
 echo -e "$WH EXPIRED : $expi $NC"
@@ -139,9 +139,9 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}       • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}       • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -149,21 +149,21 @@ menu
 
 function renew(){
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• RENEW NOOBZ •                    ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• RENEW NOOBZ •                    ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 read -p "expired?: " exp
 noobzvpns --renew-user $user --expired-user $user $exp
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• RENEW NOOBZ •                    ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• RENEW NOOBZ •                    ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "renew success!!"
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}       • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}       • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -173,20 +173,20 @@ menu
 
 function lock(){
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• LOCK  NOOBZ •                    ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• LOCK  NOOBZ •                    ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 noobzvpns --block-user $user
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}              ${WH}• LOCK  NOOBZ •                    ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}              ${WH}• LOCK  NOOBZ •                    ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "locked success!!"
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}       • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}       • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -199,14 +199,14 @@ menu
 function show(){
 
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}             ${WH}• MEMBER  NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}             ${WH}• MEMBER  NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 noobzvpns --info-all-user | awk '/^\s*\+.*-> active/ {gsub(/(issued\(yyyymmdd\)|hash_key): [0-9a-f]+/, ""); print; getline; print; getline; getline; getline; print; print "═══════════════════"}'
 
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}       • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}       • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 
@@ -216,20 +216,20 @@ menu
 
 function unlock(){
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}             ${WH}• UNLOCK  NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}             ${WH}• UNLOCK  NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 noobzvpns --unblock-user $user
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}             ${WH}• UNLOCK  NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}             ${WH}• UNLOCK  NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}      • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}      • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -238,9 +238,9 @@ menu
 
 function remove(){
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}             ${WH}• REMOVE  NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}             ${WH}• REMOVE  NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 
 read -p "Apakah Anda ingin menghapus semua user? (Y/N): " choice
 
@@ -256,14 +256,14 @@ else
 fi
 
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}             ${WH}• REMOVE  NOOBZ •                   ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}             ${WH}• REMOVE  NOOBZ •                   ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
-echo -e "${RED}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}       • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}       • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -272,18 +272,18 @@ menu
 
 
 clear
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ ${NC}${COLBG1}                 ${WH}• NOOBZ PANEL MENU •            ${NC}${RED} │ $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
-echo -e "${RED}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${RED}│ $NC  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}      ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE USER${NC}   ${RED} $NC"
-echo -e "${RED}│ $NC  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}SHOW AKUN${NC}     ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}LOCKED USER${NC}    ${RED} $NC"
-echo -e "${RED}│ $NC  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AKUN${NC}    ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}UNLOCKED USER${NC}    ${RED} $NC"
-echo -e "${RED}│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}       ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}REMOVE ALL USER${NC}    ${RED} $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
-echo -e "${RED}╭═════════════════════ • ${WH}BY${NC}${COLOR1} • ══════════════════════╮${NC}"
-echo -e "${RED}${NC}          ${WH}      • $nama •                 ${RED} $NC"
-echo -e "${RED}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ ${NC}${COLBG1}                 ${WH}• NOOBZ PANEL MENU •            ${NC}${GREEN} │ $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "${GREEN}│ $NC  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}      ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE USER${NC}   ${RED} $NC"
+echo -e "${GREEN}│ $NC  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}SHOW AKUN${NC}     ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}LOCKED USER${NC}    ${RED} $NC"
+echo -e "${GREEN}│ $NC  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AKUN${NC}    ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}UNLOCKED USER${NC}    ${RED} $NC"
+echo -e "${GREEN}│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}       ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}REMOVE ALL USER${NC}    ${RED} $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "${GREEN}╭═════════════════════ • ${WH}BY${NC}${COLOR1} • ══════════════════════╮${NC}"
+echo -e "${GREEN}${NC}          ${WH}      • $nama •                 ${GREEN} $NC"
+echo -e "${GREEN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
