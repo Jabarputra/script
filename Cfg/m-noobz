@@ -140,7 +140,7 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-echo -e "${CYAN}╭══════════════════════ • ${WH}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "${CYAN}╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
 echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
