@@ -73,7 +73,7 @@ echo -e "### $user $pass $exp" >> /etc/xray/noob
 clear
 
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
-echo -e "${LIME}|            °NOOBZVPN ACCOUNT°          
+echo -e                     °NOOBZVPN ACCOUNT°          
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
 echo ""
 echo -e "DOMAIN : $( cat /etc/xray/domain )"
@@ -97,7 +97,7 @@ echo ""
 echo -e "EBhwciUn7LMldMx+33uNv+Un6XUmbBz9VrWRZPF3iTB4OqLHlZOzH/Ua/4ZImKBFUx/bvvZhwd3XjTc2gr0NMAiSRKk+PV+aUbCr5KsFhqh/KmQpr1tjRK5hxPWDeBWoK7SYaVzC9Q53O1wscaMSS/TR1lrkdBlmmcgQxQo3MJxwz4FHGYbsYDK6axIvSRHyDA9yv0b6ns+oHz3PU6pyzdpfLfZ052g2KWb7EwnyscdP1YaKfngPyHe1D6zkHPe+BGq4PoHoj8ED5rIuxasJ9tsV3MPVJWAEpCYQdZw9XCxE0n76cQktDnhVLr4cVPE6Jch6z9hBhfVDLMDrIs6aHxndokW1wo0t9B9BtHxC2mFWR3KMyz3w6f4vm6CowMa68XE8BcqanD+RXCVhuTkn7jsay+EkLVZe28zWUupdPhRU9mkZFqNjUbsWUmd6fuviEEBfzxt48d2sTn/Db9GtSsH0UUDBTE9Q8T+Jlfkt4rF9qSGRDL1FPq7C7B3eVQWlkz8Z4wkVUnwJSi03Xuzg3j67sxmmVrcXLl9sHBF8VUUrhI8/7I0vY3CcFH8iyheWF4bw1zgZDQIxRMNuYREUQmbH"
 echo ""
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
-echo -e "${LIME}|                • $nama •          
+echo -e                     • $nama •          
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
