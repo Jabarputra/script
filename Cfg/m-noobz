@@ -97,7 +97,7 @@ echo ""
 echo -e "EBhwciUn7LMldMx+33uNv+Un6XUmbBz9VrWRZPF3iTB4OqLHlZOzH/Ua/4ZImKBFUx/bvvZhwd3XjTc2gr0NMAiSRKk+PV+aUbCr5KsFhqh/KmQpr1tjRK5hxPWDeBWoK7SYaVzC9Q53O1wscaMSS/TR1lrkdBlmmcgQxQo3MJxwz4FHGYbsYDK6axIvSRHyDA9yv0b6ns+oHz3PU6pyzdpfLfZ052g2KWb7EwnyscdP1YaKfngPyHe1D6zkHPe+BGq4PoHoj8ED5rIuxasJ9tsV3MPVJWAEpCYQdZw9XCxE0n76cQktDnhVLr4cVPE6Jch6z9hBhfVDLMDrIs6aHxndokW1wo0t9B9BtHxC2mFWR3KMyz3w6f4vm6CowMa68XE8BcqanD+RXCVhuTkn7jsay+EkLVZe28zWUupdPhRU9mkZFqNjUbsWUmd6fuviEEBfzxt48d2sTn/Db9GtSsH0UUDBTE9Q8T+Jlfkt4rF9qSGRDL1FPq7C7B3eVQWlkz8Z4wkVUnwJSi03Xuzg3j67sxmmVrcXLl9sHBF8VUUrhI8/7I0vY3CcFH8iyheWF4bw1zgZDQIxRMNuYREUQmbH"
 echo ""
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
-echo -e "${CYAN}| \E[44;1;39m          • $nama •            \E[0m|"
+echo -e "${CYAN}| \E[44;1;39m            • $nama •            \E[0m|"
 echo -e "${CYAN}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇\033[0m${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -141,7 +141,7 @@ echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
 echo -e "${CYAN}╭══════════════════════ • ${WH}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}       • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -163,7 +163,7 @@ echo -e "${CYAN}╰════════════════════�
 echo "USERNAME: $user"
 echo "renew success!!"
 echo -e "${CYAN}╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}       • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -186,7 +186,7 @@ echo -e "${CYAN}╰════════════════════�
 echo "USERNAME: $user"
 echo "locked success!!"
 echo -e "${CYAN}╭══════════════════════ • ${WH}BY${NC}${COLOR1} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}       • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -206,7 +206,7 @@ echo -e "${CYAN}╰════════════════════�
 noobzvpns --info-all-user | awk '/^\s*\+.*-> active/ {gsub(/(issued\(yyyymmdd\)|hash_key): [0-9a-f]+/, ""); print; getline; print; getline; getline; getline; print; print "═══════════════════"}'
 
 echo -e "${CYAN}╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}       • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -229,7 +229,7 @@ echo -e "${CYAN}╰════════════════════�
 echo "USERNAME: $user"
 echo "unlocked success!!"
 echo -e "${CYAN}╭══════════════════════ • ${WH}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}      • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}        • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -258,12 +258,12 @@ fi
 
 clear
 echo -e "${CYAN}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${CYAN}│ ${NC}${COLBG1}             ${WH}• REMOVE  NOOBZ •                   ${NC}${CYAN} │ $NC"
+echo -e "${CYAN}│ ${NC}${LIME}             ${LIME}• REMOVE  NOOBZ •                   ${NC}${CYAN} │ $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
 echo -e "${CYAN}╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}       • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -274,16 +274,16 @@ menu
 
 clear
 echo -e "${CYAN}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${CYAN}│ ${NC}${COLBG1}               ${WH}• NOOBZ PANEL MENU •            ${NC}${CYAN} │ $NC"
+echo -e "${CYAN}│ ${NC}${LIME}               ${LIME}• NOOBZ PANEL MENU •            ${NC}${CYAN} │ $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "${CYAN}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${CYAN}│ $NC  ${LIME}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}      ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE USER${NC}   ${RED} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}SHOW AKUN${NC}     ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}LOCKED USER${NC}    ${RED} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AKUN${NC}    ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}UNLOCKED USER${NC}    ${RED} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}       ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}REMOVE ALL USER${NC}    ${RED} $NC"
+echo -e "${CYAN}│ $NC  ${LIME}[${LIME}01${LIME}]${NC} ${LIME}• ${LIME}ADD AKUN${NC}      ${LIME}[${LIME}04${LIME}]${NC} ${LIME}• ${LIME}DELETE USER${NC}   ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${LIME}[${LIME}02${LIME}]${NC} ${LIME}• ${LIME}SHOW AKUN${NC}     ${LIME}[${LIME}05${LIME}]${NC} ${LIME}• ${LIME}LOCKED USER${NC}    ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${LIME}[${LIME}03${LIME}]${NC} ${LIME}• ${LIME}RENEW AKUN${NC}    ${LIME}[${LIME}06${LIME}]${NC} ${LIME}• ${LIME}UNLOCKED USER${NC}    ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${LIME}[${LIME}00${LIME}]${NC} ${LIME}• ${LIME}GO BACK${NC}       ${LIME}[${LIME}07${LIME}]${NC} ${LIME}• ${LIME}REMOVE ALL USER${NC}    ${LIME} $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "${CYAN}╭═════════════════════ • ${LIME}BY${NC}${CYAN} • ══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${LIME}      • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${LIME}        • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
