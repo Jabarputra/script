@@ -274,16 +274,16 @@ menu
 
 clear
 echo -e "${CYAN}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${CYAN}│ ${NC}${LIME}               ${YELLOW}• NOOBZ PANEL MENU •            ${NC}${CYAN} │ $NC"
+echo -e "${CYAN}│ ${NC}${YELLOW}               ${YELLOW}• NOOBZ PANEL MENU •            ${NC}${CYAN} │ $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "${CYAN}╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "${CYAN}│ $NC  ${LIME}[${YELLOW}01${LIME}]${NC} ${LIME}• ${LIME}ADD AKUN${NC}      ${LIME}[${YELLOW}04${LIME}]${NC} ${LIME}• ${LIME}DELETE USER${NC}   ${LIME} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${YELLOW}02${LIME}]${NC} ${LIME}• ${LIME}SHOW AKUN${NC}     ${LIME}[${YELLOW}05${LIME}]${NC} ${LIME}• ${LIME}LOCKED USER${NC}    ${LIME} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${YELLOW}03${LIME}]${NC} ${LIME}• ${LIME}RENEW AKUN${NC}    ${LIME}[${YELLOW}06${LIME}]${NC} ${LIME}• ${LIME}UNLOCKED USER${NC}    ${LIME} $NC"
-echo -e "${CYAN}│ $NC  ${LIME}[${YELLOW}00${LIME}]${NC} ${LIME}• ${LIME}GO BACK${NC}       ${LIME}[${YELLOW}07${LIME}]${NC} ${LIME}• ${LIME}REMOVE ALL USER${NC}    ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${YELLOW}[${YELLOW}01${YELLOW}]${NC} ${LIME}• ${LIME}ADD AKUN${NC}      ${YELLOW}[${YELLOW}04${YELLOW}]${NC} ${LIME}• ${LIME}DELETE USER${NC}   ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${YELLOW}[${YELLOW}02${YELLOW}]${NC} ${LIME}• ${LIME}SHOW AKUN${NC}     ${YELLOW}[${YELLOW}05${YELLOW}]${NC} ${LIME}• ${LIME}LOCKED USER${NC}    ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${LIME}• ${LIME}RENEW AKUN${NC}    ${YELLOW}[${YELLOW}06${YELLOW}]${NC} ${LIME}• ${LIME}UNLOCKED USER${NC}    ${LIME} $NC"
+echo -e "${CYAN}│ $NC  ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${LIME}• ${LIME}GO BACK${NC}       ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${LIME}• ${LIME}REMOVE ALL USER${NC}    ${LIME} $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "${CYAN}╭═════════════════════ • ${YELLOW}BY${NC}${CYAN} • ══════════════════════╮${NC}"
-echo -e "${CYAN}${NC}          ${YELLOW}        • $nama •                 ${CYAN} $NC"
+echo -e "${CYAN}${NC}          ${YELLOW}         • $nama •                 ${CYAN} $NC"
 echo -e "${CYAN}╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
