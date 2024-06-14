@@ -6,17 +6,17 @@ echo -e ""
 echo -e "\033[96;1m============================\033[0m"
 echo -e "\033[93;1m      INPUT SUBDOMAIN"
 echo -e "\033[96;1m============================\033[0m"
-echo -e "\033[91;1m Note. contoh Subdomain :\033[0m \033[93mbodoh22 \033[0m"
+echo -e "\033[91;1m Note. contoh subdomain :\033[0m \033[93mjanda80 \033[0m"
 echo -e " "
 read -p "SUBDOMAIN :  " domen
 echo -e ""
-DOMAIN=zvx.my.id
+DOMAIN=jabar-putra.store
 sub=${domen}
-dns=${sub}.zvx.my.id
+dns=${sub}.jabar-putra.store
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.zvx.my.id
-CF_KEY=e03f30d53ad7ec2ab54327baa5e2da5ab44f0
-CF_ID=mezzqueen293@gmail.com
+dns=${sub}.jabar-putra.store
+CF_KEY=8a67c8022a8020f6dcaee891ce601741fe93b
+CF_ID=nelisukarna9@gmail.com
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
