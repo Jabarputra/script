@@ -274,10 +274,8 @@ TEXT="
 <b>          JABAR-SHOP    </b>
 <code>────────────────────</code>
 <code>Client : </code><code>$USRSC</code>
-<code>Domain : </code><code>$domain</code>
 <code>Date   : </code><code>$TIME</code>
 <code>Time   : </code><code>$TIMEZONE</code>
-<code>Ip vps : </code><code>$ipsaya</code>
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
