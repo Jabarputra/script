@@ -19,8 +19,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="7082883438"
-KEY="7021919782:AAGeRCwFWCUNyK7NhkUC3SlEiV6O1TYRdTw"
+CHATID="-1002061942337"
+KEY="7153219434:AAFXimvDcCJiAPGOrmFr9RPuJuEDKtkNEps"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -271,9 +271,9 @@ EXPSC=$(wget -qO- https://raw.githubusercontent.com/Jabarputra/izin/main/ip | gr
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b> 🟢 DONE SEWA AUTOSCRIPT 🟢</b>
+<b>          JABAR-SHOP    </b>
 <code>────────────────────</code>
-<code>ID     : </code><code>$USRSC</code>
+<code>Client : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
 <code>Date   : </code><code>$TIME</code>
 <code>Time   : </code><code>$TIMEZONE</code>
@@ -281,7 +281,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/capmodzstore"},{"text":"Contack","url":"https://wa.me/6281398079271"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER","url":"https://t.me/jabar_putra"},{"text":"WA","url":"https://wa.me/6283835753089"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
