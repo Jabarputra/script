@@ -48,11 +48,6 @@ res1() {
     rm -rf /usr/local/sbin/*~
     rm -rf /usr/local/sbin/gz*
     rm -rf /usr/local/sbin/*.bak
-    rm -rf /usr/local/sbin/m-noobz
-    wget /usr/local/sbin "https://raw.githubusercontent.com/Jabarputra/script/main/Cfg/m-noobz" 
-    cp m-noobz /usr/local/sbin
-    rm m-noobz*
-    chmod +x /usr/local/sbin/m-noobz
 }
 netfilter-persistent
 clear
