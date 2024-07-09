@@ -737,12 +737,14 @@ print_success "Udp Custom Berhasil"
 clear
 print_install "MEMASANG NOOBZVPNS"
 cd
-apt install git -y
-git clone https://github.com/sctunnel/noobzvpn.git
-cd noobzvpn/
-chmod +x install.sh
-./install.sh
-
+wget https://raw.githubusercontent.com/SatanTech/noobz/main/noobzvpns.zip
+unzip noobzvpns.zip
+chmod +x noobzvpns/*
+cd noobzvpns
+bash install.sh
+rm -rf noobzvpns
+systemctl restart noobzvpns
+clear
 echo start service noobzvpns
 systemctl start noobzvpns &>/dev/null
 
