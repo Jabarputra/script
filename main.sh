@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[92;1m               WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
+echo -e "\033[96;1m               WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -737,14 +737,12 @@ print_success "Udp Custom Berhasil"
 clear
 print_install "MEMASANG NOOBZVPNS"
 cd
-wget https://raw.githubusercontent.com/SatanTech/noobz/main/noobzvpns.zip
-unzip noobzvpns.zip
-chmod +x noobzvpns/*
-cd noobzvpns
-bash install.sh
-rm -rf noobzvpns
-systemctl restart noobzvpns
-clear
+apt install git -y
+git clone https://github.com/sctunnel/noobzvpn.git
+cd noobzvpn/
+chmod +x install.sh
+./install.sh
+
 echo start service noobzvpns
 systemctl start noobzvpns &>/dev/null
 
