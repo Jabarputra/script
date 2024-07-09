@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m               WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
+echo -e "\033[92;1m               WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
