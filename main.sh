@@ -19,8 +19,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="-1002061942337"
-KEY="7153219434:AAFXimvDcCJiAPGOrmFr9RPuJuEDKtkNEps"
+CHATID="5630368779"
+KEY="7323866966:AAG9Cqg-2xeq9WnX3GBDkcmUZcM5xOEi9kU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[92;1m               WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
+echo -e "\033[92;1m              WELCOME TO SCRIPT JABAR-SHOP              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -112,9 +112,9 @@ function print_ok() {
 echo -e "${OK} ${BLUE} $1 ${FONT}"
 }
 function print_install() {
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ============================= ${FONT}"
 echo -e "${YELLOW} # $1 ${FONT}"
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ============================= ${FONT}"
 sleep 1
 }
 function print_error() {
@@ -122,9 +122,9 @@ echo -e "${ERROR} ${REDBG} $1 ${FONT}"
 }
 function print_success() {
 if [[ 0 -eq $? ]]; then
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ============================= ${FONT}"
 echo -e "${Green} # $1 berhasil dipasang"
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ============================= ${FONT}"
 sleep 2
 fi
 }
@@ -232,7 +232,7 @@ function pasang_domain() {
 echo -e ""
 clear
 echo -e "    ----------------------------------"
-echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
+echo -e " |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "    ----------------------------------"
 echo -e "     \e[1;32m1)\e[0m Your Domain"
 echo -e "     \e[1;32m2)\e[0m Random Domain "
@@ -271,7 +271,7 @@ EXPSC=$(wget -qO- https://raw.githubusercontent.com/Jabarputra/izin/main/ip | gr
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b>          JABAR-SHOP    </b>
+<b>         JABAR-SHOP    </b>
 <code>────────────────────</code>
 <code>Client : </code><code>$USRSC</code>
 <code>Date   : </code><code>$TIME</code>
@@ -737,12 +737,14 @@ print_success "Udp Custom Berhasil"
 clear
 print_install "MEMASANG NOOBZVPNS"
 cd
-apt install git -y
-git clone https://github.com/sctunnel/noobzvpn.git
-cd noobzvpn/
-chmod +x install.sh
-./install.sh
-
+wget https://raw.githubusercontent.com/SatanTech/noobz/main/noobzvpns.zip
+unzip noobzvpns.zip
+chmod +x noobzvpns/*
+cd noobzvpns
+bash install.sh
+rm -rf noobzvpns
+systemctl restart noobzvpns
+clear
 echo start service noobzvpns
 systemctl start noobzvpns &>/dev/null
 
