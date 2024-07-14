@@ -10,16 +10,15 @@ echo -e "\033[91;1m Note. contoh subdomain :\033[0m \033[93mjanda80 \033[0m"
 echo -e " "
 read -p "SUBDOMAIN :  " domen
 echo -e ""
-DOMAIN=jabar-putra.store
+DOMAIN=jabar.shop
 sub=${domen}
-dns=${sub}.jabar-putra.store
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.jabar-putra.store
-CF_KEY=8a67c8022a8020f6dcaee891ce601741fe93b
-CF_ID=nelisukarna9@gmail.com
+dns=${sub}.jabar.shop
+CF_ID=nelihsukarna9@gmail.com
+CF_KEY=d42c65988dde5c910f39c771734f52c4fa83f
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
-echo "Updating DNS for ${dns}..."
+echo "Updating Domain for ${dns}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
      -H "X-Auth-Key: ${CF_KEY}" \
@@ -48,5 +47,5 @@ echo "$dns" > /root/scdomain
 echo "$dns" > /etc/xray/domain
 echo "$dns" > /etc/v2ray/domain
 echo "$dns" > /etc/xray/scdomain
-echo "IP=$dns" > /var/lib/kyt/ipvps.conf
+echo "$MYIP=$dns" > /var/lib/kyt/ipvps.conf
 cd
