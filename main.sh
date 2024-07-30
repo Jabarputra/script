@@ -638,11 +638,10 @@ wget -O /etc/banner.txt "${REPO}Bnr/issue.net"
 print_success "Fail2ban"
 }
 function ins_epro(){
-clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://raw.githubusercontent.com/Jabarputra/script/Fls/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/Jabarputra/script/Cfg/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/Jabarputra/script/Fls/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://roztun.my.id/script/Fls/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://roztun.my.id/script/Cfg/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://roztun.my.id/script/Fls/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
