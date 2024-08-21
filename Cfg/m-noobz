@@ -415,16 +415,16 @@ menu
 
 clear
 echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│${NC} \033[44;1;97;1m             • NOOBZ PANEL MENU •               ${NC}$CYAN │$NC"
+echo -e "$CYAN│${NC} \033[44;1;97;1m              • NOOBZ PANEL MENU •               ${NC}$CYAN │$NC"
 echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│ $NC ${BLUE}[${BLUE}01${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}ADD AKUN${NC}     ${BLUE}[${BLUE}04${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}DELETE USER${NC}  $LIME $NC"
-echo -e "$CYAN│ $NC ${BLUE}[${BLUE}02${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}SHOW AKUN${NC}    ${BLUE}[${BLUE}05${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}LOCKED USER${NC}   $LIME $NC"
-echo -e "$CYAN│ $NC ${BLUE}[${BLUE}03${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}RENEW AKUN${NC}   ${BLUE}[${BLUE}06${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}UNLOCKED USER${NC}   $LIME $NC"
-echo -e "$CYAN│ $NC ${BLUE}[${BLUE}00${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}GO BACK${NC}      ${BLUE}[${BLUE}07${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}REMOVE ALL USER${NC}   $LIME $NC"
+echo -e "$CYAN│  $NC ${BLUE}[${BLUE}01${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}ADD AKUN${NC}       ${BLUE}[${BLUE}04${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}DELETE USER${NC}  $LIME $NC"
+echo -e "$CYAN│  $NC ${BLUE}[${BLUE}02${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}SHOW AKUN${NC}      ${BLUE}[${BLUE}05${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}LOCKED USER${NC}   $LIME $NC"
+echo -e "$CYAN│  $NC ${BLUE}[${BLUE}03${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}RENEW AKUN${NC}     ${BLUE}[${BLUE}06${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}UNLOCKED USER${NC}   $LIME $NC"
+echo -e "$CYAN│  $NC ${BLUE}[${BLUE}00${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}GO BACK${NC}        ${BLUE}[${BLUE}07${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}REMOVE ALL USER${NC}   $LIME $NC"
 echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│${NC}${CYAN}             • JABAR SHOP PREMIUM SCRIPT •             ${NC}$CYAN   │
+echo -e "$CYAN│${NC} ${CYAN}             • JABAR SHOP PREMIUM SCRIPT •  ${NC}           ${CYAN}   │
 echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
