@@ -424,7 +424,7 @@ echo -e "$CYAN│  $NC ${BLUE}[${BLUE}03${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}R
 echo -e "$CYAN│  $NC ${BLUE}[${BLUE}00${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}GO BACK${NC}        ${BLUE}[${BLUE}07${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}REMOVE ALL USER${NC}   $LIME $NC"
 echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│${NC} ${CYAN}             • JABAR SHOP PREMIUM SCRIPT •  ${NC}           ${CYAN}   │
+echo -e "$CYAN│${NC} ${CYAN}             • JABAR SHOP PREMIUM SCRIPT •          ${NC} $CYAN  │$NC"
 echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
