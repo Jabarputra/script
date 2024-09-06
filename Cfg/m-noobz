@@ -281,7 +281,7 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
 echo -e "$BLUE${NC}           ${LIGHT}            • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -303,7 +303,7 @@ echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• RENEW NOOBZ •        
 echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "renew success!!"
-echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -326,7 +326,7 @@ echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• LOCK  NOOBZ •        
 echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "locked success!!"
-echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -346,7 +346,7 @@ echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• MEMBER  NOOBZ •       
 echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 noobzvpns --info-all-user | awk '/^\s*\+.*-> active/ {gsub(/(issued\(yyyymmdd\)|hash_key): [0-9a-f]+/, ""); print; getline; print; getline; getline; getline; print; print "═══════════════════"}'
 
-echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -369,7 +369,7 @@ echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• UNLOCK  NOOBZ •       
 echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
-echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -418,13 +418,13 @@ echo -e "$BLUE┌─────────────────────
 echo -e "$BLUE│${NC} \033[44;1;97;1m              • NOOBZ PANEL MENU •               ${NC}$BLUE │$NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}01${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}ADD AKUN${NC}       ${YELLOW}[${YELLOW}04${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}DELETE USER${NC}  $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}02${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}SHOW AKUN${NC}      ${YELLOW}[${YELLOW}05${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}LOCKED USER${NC}   $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}RENEW AKUN${NC}     ${YELLOW}[${YELLOW}06${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}UNLOCKED USER${NC}   $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}01${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}ADD AKUN${NC}       ${YELLOW}[${YELLOW}04${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}DELETE USER${NC}  $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}02${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}SHOW AKUN${NC}      ${YELLOW}[${YELLOW}05${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}LOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}RENEW AKUN${NC}     ${YELLOW}[${YELLOW}06${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}UNLOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│${NC} ${LIGHT}         • JABAR TUNNELING SCRIPT •         ${NC}$BLUE  │$NC"
+echo -e "$BLUE│${NC} ${LIGHT}            • JABAR TUNNELING SCRIPT •         ${NC}$BLUE  │$NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
