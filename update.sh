@@ -60,7 +60,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[97;1;44;1m             UPDATE SCRIPT            \e[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " \033[1;92m update script service\033[1;37m"
+echo -e "\033[1;92m Update Script Service\033[1;37m"
 fun_bar 'res1'
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
