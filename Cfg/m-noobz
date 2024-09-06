@@ -61,7 +61,7 @@ function create(){
 clear
 
 echo -e "$BLUE┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│ ${NC}${LIGHT}            ${LIGHT}• SSH PANEL MENU •            ${NC}$BLUE │ $NC"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• SSH PANEL MENU •              ${NC}$BLUE │ $NC"
 echo -e "$BLUE╰─────────────────────────────────────────────────┘${NC}"
 read -p "Username: " user
 read -p "Password: " pass
@@ -285,7 +285,7 @@ echo -e "$BLUE╭═════════════════════
 echo -e "$BLUE${NC}           ${LIGHT}            • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+m-noobz
 }
 
 
@@ -350,7 +350,7 @@ echo -e "$BLUE╭═════════════════════
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+m-noobz
 
 }
 
@@ -373,7 +373,7 @@ echo -e "$BLUE╭═════════════════════
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+m-noobz
 }
 
 
@@ -407,7 +407,7 @@ echo -e "$BLUE╭═════════════════════
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+m-noobz
 }
 
 
@@ -424,7 +424,7 @@ echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${CYAN}☞ ${NC} ${L
 echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│${NC} ${LIGHT}            • JABAR TUNNELING SCRIPT •         ${NC}$BLUE  │$NC"
+echo -e "$BLUE│${NC} ${LIGHT}            • JABAR TUNNELING SCRIPT •          ${NC}$BLUE  │$NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
