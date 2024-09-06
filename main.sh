@@ -3,10 +3,10 @@ apt upgrade -y
 apt update -y
 apt install curls
 apt install wondershaper -y
-Green="\e[92;1m"
-RED="\033[1;31m"
-YELLOW="\033[33m"
-BLUE="\033[36m"
+Green="\e[0m"
+RED="\033[0;31m"
+YELLOW="\033[1;33m"
+BLUE="\033[1;36m"
 FONT="\033[0m"
 GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
@@ -14,8 +14,8 @@ OK="${Green}--->${FONT}"
 ERROR="${RED}[ERROR]${FONT}"
 GRAY="\e[1;30m"
 NC='\e[0m'
-red='\e[1;31m'
-green='\e[0;32m'
+red='\e[1;35m'
+green='\e[0m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}────────────────────────────────────────────────${NC}"
-echo -e "\033[92;1m            WELCOME TO SCRIPT JABAR SHOP             \033[0m"
+echo -e "\033[92;1m            WELCOME TO SCRIPT JABAR TUNNELING           \033[0m"
 echo -e "${YELLOW}────────────────────────────────────────────────${NC}"
 echo ""
 sleep 3
@@ -268,7 +268,7 @@ EXPSC=$(wget -qO- https://raw.githubusercontent.com/Jabarputra/izin/main/ip | gr
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b>        JABAR SHOP SCRIPT    </b>
+<b>     JABAR TUNNELING SCRIPT    </b>
 <code>────────────────────</code>
 <code>Client : </code><code>$USRSC</code>
 <code>Date   : </code><code>$TIME</code>
@@ -531,7 +531,7 @@ clear
 function ins_dropbear(){
 clear
 print_install "Menginstall Dropbear"
-apt-get install dropbear -y > /dev/null 2>&1
+apt-get install dropbear -y
 wget -q -O /etc/default/dropbear "${REPO}Cfg/dropbear.conf"
 chmod +x /etc/default/dropbear
 /etc/init.d/dropbear restart
@@ -935,9 +935,9 @@ sudo hostnamectl set-hostname $username
 clear
 echo -e ""
 echo -e ""
-echo -e "\033[96m─────────────────────\033[0m"
-echo -e "\033[92m      INSTALASI SELESAI      \033[0m"
-echo -e "\033[96m─────────────────────\033[0m"
+echo -e "\033[1;36m─────────────────────\033[0m"
+echo -e "\033[1;32m    INSTALASI SELESAI    \033[0m"
+echo -e "\033[1;36m─────────────────────\033[0m"
 echo -e ""
 sleep 2
 clear
