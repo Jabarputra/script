@@ -61,7 +61,7 @@ function create(){
 clear
 
 echo -e "$BLUE┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• SSH PANEL MENU •              ${NC}$BLUE │ $NC"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• SSH PANEL MENU •               ${NC}$BLUE │ $NC"
 echo -e "$BLUE╰─────────────────────────────────────────────────┘${NC}"
 read -p "Username: " user
 read -p "Password: " pass
@@ -330,7 +330,7 @@ echo -e "$BLUE╭═════════════════════
 echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
 echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+m-noobz
 }
 
 
@@ -418,10 +418,10 @@ echo -e "$BLUE┌─────────────────────
 echo -e "$BLUE│${NC} \033[44;1;97;1m              • NOOBZ PANEL MENU •               ${NC}$BLUE │$NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}01${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}ADD AKUN${NC}       ${YELLOW}[${YELLOW}04${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}DELETE USER${NC}  $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}02${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}SHOW AKUN${NC}      ${YELLOW}[${YELLOW}05${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}LOCKED USER${NC}   $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}RENEW AKUN${NC}     ${YELLOW}[${YELLOW}06${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}UNLOCKED USER${NC}   $LIME $NC"
-echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}1${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}ADD AKUN${NC}       ${YELLOW}[${YELLOW}4${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}DELETE USER${NC}  $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}2${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}SHOW AKUN${NC}      ${YELLOW}[${YELLOW}5${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}LOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}3${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}RENEW AKUN${NC}     ${YELLOW}[${YELLOW}6${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}UNLOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}x${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}7${YELLOW}]${NC} ${CYAN}☞ ${NC} ${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
 echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
 echo -e "$BLUE│${NC} ${LIGHT}            • JABAR TUNNELING SCRIPT •          ${NC}$BLUE  │$NC"
@@ -437,6 +437,6 @@ case $opt in
 06 | 6) clear ; unlock ;;
 07 | 7) clear ; remove ;;
 100) clear ; $up2u ;;
-00 | 0) clear ; menu ;;
+x | 0) clear ; menu ;;
 *) clear ; menu ;;
 esac
