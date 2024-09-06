@@ -9,7 +9,7 @@ export LC_CTYPE='en_US.utf8'
 export RED='\033[0;31m'
 export LIME='\e[92;1m'
 export YELLOW='\033[1;33m'
-export BLUE='\033[1;34m'
+export BLUE='\033[0;34m'
 export PURPLE='\033[0;35m'
 export CYAN='\033[1;96m'
 export LIGHT='\033[1;97m'
@@ -60,9 +60,9 @@ fi
 function create(){
 clear
 
-echo -e "$CYAN╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• SSH PANEL MENU •               ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}            ${LIGHT}• SSH PANEL MENU •            ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰─────────────────────────────────────────────────┘${NC}"
 read -p "Username: " user
 read -p "Password: " pass
 until [[ $exp =~ ^[0-9]+$ ]]; do
@@ -91,7 +91,7 @@ USERNAME : $user
 PASSWORD : $pass
 IP LIMIT : $ip
 EXP DAYS : $expi
-tcp_std port :  8080
+tcp_std port : 8080-8880
 tcp_ssl port : 8443
 ◇━━━━━━━━━━━━━━━━◇
       TCP_STD 8080
@@ -106,7 +106,7 @@ EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVl
 EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP
 
 ◇━━━━━━━━━━━━━━━━━◇
-      • JABAR SHOP • 
+    • JABAR TUNNELING • 
 ◇━━━━━━━━━━━━━━━━━◇
 END
 if [[ -e /etc/noobz ]]; then
@@ -119,22 +119,22 @@ USERNAME : <code>$user</code>
 PASSWORD : <code>$pass</code>
 IP LIMIT : $ip
 EXP DAYS : $expi
-tcp_std port : 8080
-tcp_ssl port : 8443
+tcp_std port : 8080-8880
+tcp_ssl port : 8443-443
 ◇━━━━━━━━━━━━━━━━━◇
-  Example config TCP_STD 8080
+       TCP STD 8080
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVldGNLCXsFP3XfuuhmgsFMFK/RNdCJO1dF1LdAFlB4FSpoxofkIxg4/ot5WJVEGKPxuK7M3hm+93/8mTKR7LO196KrYbIcDbZtui7+g0u03le97wfPfnjHgd5YVflwaagi6T1PU2z5nXp0sLPrwKY5mdvmQu2QVAiMGE/ZqdjM1m2kcYDaecChWbLz4FiMVQBjEqa5G4h7zjBmxBtXFpWvOyApTfPIKK44eBHxKoLc7FXjaEFw7ONqexhB3svRPND1XR9VtkISZLEwrXQPPv1OO2pzOaS7unutCaP7pxQoTaChCn9Z2tN5tKDn8UsB/p8ouoLZPH4g83fYzO28dV2SC064+S3PLo6MlZxmlGuBUdhPuKgrfK+Rbejas7Z8GnCglJLUyTcwuynoFQiNVqiP64hMnvB9hSNl6YDQeST20ydA8dMIG7Jg8PJ52MRO5GIxNwl9y3ut7mPrn/+ia+rgoH+kz4mww6SBEy15TeXss7ZMYZcGj7A1vtTFOfCBvvqRgBxpQ6ZPcPX2+ohuC16/fQ==</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-  Example config TCP_SSL 8443
+       TCP SSL 8443
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-     • 🤖@jabar_putra • 
+    • 🤖@jabar_putra • 
 ◇━━━━━━━━━━━━━━━━━◇
 "
 else
@@ -150,19 +150,19 @@ EXP DAYS : $expi
 tcp_std port :  8080
 tcp_ssl port : 8443
 ◇━━━━━━━━━━━━━━━━━◇
-  Example config TCP_STD 8080
+       TCP_STD 8080
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVldGNLCXsFP3XfuuhmgsFMFK/RNdCJO1dF1LdAFlB4FSpoxofkIxg4/ot5WJVEGKPxuK7M3hm+93/8mTKR7LO196KrYbIcDbZtui7+g0u03le97wfPfnjHgd5YVflwaagi6T1PU2z5nXp0sLPrwKY5mdvmQu2QVAiMGE/ZqdjM1m2kcYDaecChWbLz4FiMVQBjEqa5G4h7zjBmxBtXFpWvOyApTfPIKK44eBHxKoLc7FXjaEFw7ONqexhB3svRPND1XR9VtkISZLEwrXQPPv1OO2pzOaS7unutCaP7pxQoTaChCn9Z2tN5tKDn8UsB/p8ouoLZPH4g83fYzO28dV2SC064+S3PLo6MlZxmlGuBUdhPuKgrfK+Rbejas7Z8GnCglJLUyTcwuynoFQiNVqiP64hMnvB9hSNl6YDQeST20ydA8dMIG7Jg8PJ52MRO5GIxNwl9y3ut7mPrn/+ia+rgoH+kz4mww6SBEy15TeXss7ZMYZcGj7A1vtTFOfCBvvqRgBxpQ6ZPcPX2+ohuC16/fQ==</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-  Example config TCP_SSL 8443
+       TCP_SSL 8443
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-       • JABAR SHOP • 
+    • JABAR TUNNELING • 
 ◇━━━━━━━━━━━━━━━━━◇
 "
 fi
@@ -177,9 +177,9 @@ fi
 user2=$(echo "$user" | cut -c 1-3)
 TIME2=$(date +'%Y-%m-%d %H:%M:%S')
 TEXT2="
-<code>◇━━━━━━━━━━━━━━◇</code>
-<code>   TRANSAKSI NOOBZVPNS SUCCES </code>
-<code>◇━━━━━━━━━━━━━━◇</code>
+<code>◇━━━━━━━━━━━━━━━━━━━◇</code>
+<code>  TRANSAKSI NOOBZVPNS SUCCES </code>
+<code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <code>DOMAIN   :</code> <code>${domain} </code>
 <code>ISP      :</code> <code>$ISP $CITY </code>
 <code>DATE   :</code> <code>${TIME2} WIB </code>
@@ -200,19 +200,19 @@ echo -e "EXP DAYS: EXP DAYS : $expi ( $exp Days )" | tee -a /etc/xray/noobz/akun
 echo -e "tcp_std port:  8080" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "tcp_ssl port: 8443" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
-echo -e "Example config TCP_STD 8080" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
+echo -e "  TCP_STD 8080" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVldGNLCXsFP3XfuuhmgsFMFK/RNdCJO1dF1LdAFlB4FSpoxofkIxg4/ot5WJVEGKPxuK7M3hm+93/8mTKR7LO196KrYbIcDbZtui7+g0u03le97wfPfnjHgd5YVflwaagi6T1PU2z5nXp0sLPrwKY5mdvmQu2QVAiMGE/ZqdjM1m2kcYDaecChWbLz4FiMVQBjEqa5G4h7zjBmxBtXFpWvOyApTfPIKK44eBHxKoLc7FXjaEFw7ONqexhB3svRPND1XR9VtkISZLEwrXQPPv1OO2pzOaS7unutCaP7pxQoTaChCn9Z2tN5tKDn8UsB/p8ouoLZPH4g83fYzO28dV2SC064+S3PLo6MlZxmlGuBUdhPuKgrfK+Rbejas7Z8GnCglJLUyTcwuynoFQiNVqiP64hMnvB9hSNl6YDQeST20ydA8dMIG7Jg8PJ52MRO5GIxNwl9y3ut7mPrn/+ia+rgoH+kz4mww6SBEy15TeXss7ZMYZcGj7A1vtTFOfCBvvqRgBxpQ6ZPcPX2+ohuC16/fQ==" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
-echo -e "Example config TCP_SSL 8443" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
+echo -e "  TCP_SSL 8443" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
-echo -e " • JABAR SHOP •" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
+echo -e "  • JABAR TUNNELING •" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -221,9 +221,9 @@ menu
 
 function delete(){
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}               ${LIME}• DELETE NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}               ${LIGHT}• DELETE NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/noob")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
@@ -255,9 +255,9 @@ expi=`date -d "$exp days" +"%Y-%m-%d"`
 systemctl restart noobzvpns
 
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• DELETE NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• DELETE NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -e "$LIME USERNAME $user HAS BEEN DELETE $NC"
 echo -e "$LIME EXPIRED : $expi $NC"
@@ -281,9 +281,9 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}            ${LIME}            • JABAR SHOP PREMIUM •                 $LIME $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}           ${LIGHT}            • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -291,21 +291,21 @@ menu
 
 function renew(){
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• RENEW NOOBZ •                    ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• RENEW NOOBZ •                    ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 read -p "expired?: " exp
 noobzvpns --renew-user $user --expired-user $user $exp
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• RENEW NOOBZ •                    ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• RENEW NOOBZ •                    ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "renew success!!"
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}          ${LIME}   • JABAR SHOP PREMIUM •                 $CYAN $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -315,20 +315,20 @@ menu
 
 function lock(){
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• LOCK  NOOBZ •                    ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• LOCK  NOOBZ •                    ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 noobzvpns --block-user $user
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}              ${LIME}• LOCK  NOOBZ •                    ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• LOCK  NOOBZ •                    ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "locked success!!"
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}          ${LIME}   • JABAR SHOP PREMIUM •                 $CYAN $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -341,14 +341,14 @@ menu
 function show(){
 
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}             ${LIME}• MEMBER  NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• MEMBER  NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 noobzvpns --info-all-user | awk '/^\s*\+.*-> active/ {gsub(/(issued\(yyyymmdd\)|hash_key): [0-9a-f]+/, ""); print; getline; print; getline; getline; getline; print; print "═══════════════════"}'
 
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}          ${LIME}   • JABAR SHOP PREMIUM •                 $CYAN $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 
@@ -358,20 +358,20 @@ menu
 
 function unlock(){
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}             ${LIME}• UNLOCK  NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• UNLOCK  NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 read -p "username: " user
 noobzvpns --unblock-user $user
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}             ${LIME}• UNLOCK  NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• UNLOCK  NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}          ${LIME}   • JABAR SHOP PREMIUM •                 $CYAN $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -380,9 +380,9 @@ menu
 
 function remove(){
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}             ${LIME}• REMOVE  NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• REMOVE  NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 
 read -p "Apakah Anda ingin menghapus semua user? (Y/N): " choice
 
@@ -398,14 +398,14 @@ else
 fi
 
 clear
-echo -e "$CYAN╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$CYAN│ ${NC}${LIME}             ${LIME}• REMOVE  NOOBZ •                   ${NC}$CYAN │ $NC"
-echo -e "$CYAN╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭═══════════════════════════════════════════════════╮${NC}"
+echo -e "$BLUE│ ${NC}${LIGHT}             ${LIGHT}• REMOVE  NOOBZ •                   ${NC}$BLUE │ $NC"
+echo -e "$BLUE╰═══════════════════════════════════════════════════╯${NC}"
 echo "USERNAME: $user"
 echo "unlocked success!!"
-echo -e "$CYAN╭══════════════════════ • ${LIME}BY${NC}${CYAN} • ═══════════════════════╮${NC}"
-echo -e "$CYAN${NC}          ${LIME}   • JABAR SHOP PREMIUM •                 $CYAN $NC"
-echo -e "$CYAN╰═════════════════════════════════════════════════════╯${NC}"
+echo -e "$BLUE╭══════════════════════ • ${LIGHT}BY${NC}${BLUE} • ═══════════════════════╮${NC}"
+echo -e "$BLUE${NC}          ${LIGHT}   • JABAR TUNNELING SCRIPT •                 $BLUE $NC"
+echo -e "$BLUE╰═════════════════════════════════════════════════════╯${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
@@ -414,18 +414,18 @@ menu
 
 
 clear
-echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│${NC} \033[44;1;97;1m              • NOOBZ PANEL MENU •               ${NC}$CYAN │$NC"
-echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
-echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│  $NC ${BLUE}[${BLUE}01${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}ADD AKUN${NC}       ${BLUE}[${BLUE}04${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}DELETE USER${NC}  $LIME $NC"
-echo -e "$CYAN│  $NC ${BLUE}[${BLUE}02${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}SHOW AKUN${NC}      ${BLUE}[${BLUE}05${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}LOCKED USER${NC}   $LIME $NC"
-echo -e "$CYAN│  $NC ${BLUE}[${BLUE}03${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}RENEW AKUN${NC}     ${BLUE}[${BLUE}06${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}UNLOCKED USER${NC}   $LIME $NC"
-echo -e "$CYAN│  $NC ${BLUE}[${BLUE}00${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}GO BACK${NC}        ${BLUE}[${BLUE}07${BLUE}]${NC} ${YELLOW}☞ ${NC}${LIME}REMOVE ALL USER${NC}   $LIME $NC"
-echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
-echo -e "$CYAN┌───────────────────────────────────────────────────┐${NC}"
-echo -e "$CYAN│${NC} ${LIME}          • JABAR SHOP PREMIUM SCRIPT •         ${NC}$CYAN  │$NC"
-echo -e "$CYAN╰───────────────────────────────────────────────────┘${NC}"
+echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
+echo -e "$BLUE│${NC} \033[44;1;97;1m              • NOOBZ PANEL MENU •               ${NC}$BLUE │$NC"
+echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
+echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}01${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}ADD AKUN${NC}       ${YELLOW}[${YELLOW}04${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}DELETE USER${NC}  $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}02${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}SHOW AKUN${NC}      ${YELLOW}[${YELLOW}05${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}LOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}03${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}RENEW AKUN${NC}     ${YELLOW}[${YELLOW}06${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}UNLOCKED USER${NC}   $LIME $NC"
+echo -e "$BLUE│  $NC ${YELLOW}[${YELLOW}00${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}GO BACK${NC}        ${YELLOW}[${YELLOW}07${YELLOW}]${NC} ${CYAN}☞ ${NC}${LIGHT}REMOVE ALL USER${NC}   $LIME $NC"
+echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
+echo -e "$BLUE┌───────────────────────────────────────────────────┐${NC}"
+echo -e "$BLUE│${NC} ${LIGHT}         • JABAR TUNNELING SCRIPT •         ${NC}$BLUE  │$NC"
+echo -e "$BLUE╰───────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${LIME}Select menu ${LIME}: ${LIME}"; read opt
 case $opt in
