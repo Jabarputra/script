@@ -7,7 +7,7 @@ domain=$(cat /etc/xray/domain)
 cd /etc/systemd/system/
 rm -rf kyt.service
 cd
-grenbo="\e[92;1m"
+grenbo="\e[1;32m"
 NC='\e[0m'
 #install
 cd /usr/bin
