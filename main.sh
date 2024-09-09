@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${GRAY}────────────────────────────────────────────────${NC}"
-echo -e "\033[1;97m        WELCOME TO SCRIPT JABAR TUNNELING        \033[0m"
+echo -e "\033[1;97m       WELCOME TO SCRIPT JABAR TUNNELING        \033[0m"
 echo -e "${GRAY}────────────────────────────────────────────────${NC}"
 echo ""
 sleep 3
