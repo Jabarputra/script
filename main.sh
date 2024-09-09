@@ -12,7 +12,7 @@ GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
 OK="${Green}--->${FONT}"
 ERROR="${RED}[ERROR]${FONT}"
-GRAY="\e[1;30m"
+GRAY="\e[1;34m"
 NC='\e[0m'
 red='\e[1;35m'
 green='\e[0m'
@@ -27,9 +27,9 @@ export IP=$( curl -sS icanhazip.com )
 clear
 clear && clear && clear
 clear;clear;clear
-echo -e "${YELLOW}────────────────────────────────────────────────${NC}"
-echo -e "\033[92;1m            WELCOME TO SCRIPT JABAR TUNNELING           \033[0m"
-echo -e "${YELLOW}────────────────────────────────────────────────${NC}"
+echo -e "${GRAY}────────────────────────────────────────────────${NC}"
+echo -e "\033[1;97m        WELCOME TO SCRIPT JABAR TUNNELING        \033[0m"
+echo -e "${GRAY}────────────────────────────────────────────────${NC}"
 echo ""
 sleep 3
 if [[ $( uname -m | awk '{print $1}' ) == "x86_64" ]]; then
@@ -244,7 +244,7 @@ clear
 echo ""
 echo ""
 echo -e "   \e[1;36m──────────────────────$NC"
-echo -e "   \e[1;32m      CHANGES DOMAIN  $NC"
+echo -e "   \e[1;32m   CHANGES DOMAIN   $NC"
 echo -e "   \e[1;36m──────────────────────$NC"
 echo -e ""
 read -p " INPUT YOUR DOMAIN : " host1
@@ -268,7 +268,7 @@ EXPSC=$(wget -qO- https://raw.githubusercontent.com/Jabarputra/izin/main/ip | gr
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b>     JABAR TUNNELING SCRIPT    </b>
+<b>   JABAR TUNNELING SCRIPT    </b>
 <code>────────────────────</code>
 <code>Client : </code><code>$USRSC</code>
 <code>Date   : </code><code>$TIME</code>
