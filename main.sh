@@ -936,7 +936,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "\033[1;36m─────────────────────\033[0m"
-echo -e "\033[1;32m    INSTALASI SELESAI    \033[0m"
+echo -e "\033[1;32m  INSTALASI SELESAI  \033[0m"
 echo -e "\033[1;36m─────────────────────\033[0m"
 echo -e ""
 sleep 2
