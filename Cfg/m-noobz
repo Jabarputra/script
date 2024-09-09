@@ -63,12 +63,12 @@ clear
 echo -e "$BLUE┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$BLUE│ ${NC}${LIGHT}              ${LIGHT}• SSH PANEL MENU •               ${NC}$BLUE │ $NC"
 echo -e "$BLUE╰─────────────────────────────────────────────────┘${NC}"
-read -p "Username: " user
-read -p "Password: " pass
+read -p "Username : " user
+read -p "Password : " pass
 until [[ $exp =~ ^[0-9]+$ ]]; do
 read -p "Exp (0 for unlimited days):" exp
 done
-read -p "IP LIMIT " ip
+read -p "IP LIMIT : " ip
 
 if [ ! -e /etc/sf/limit/noobs/ip/ ]; then
   mkdir -p /etc/sf/limit/noobs/ip/
@@ -84,7 +84,7 @@ echo -e "### $user $expi $pass" >> /etc/xray/noob
 clear
 cat > /var/www/html/noobzvpns-$user.txt <<-END
 ◇━━━━━━━━━━━━━━━━━◇
-     NOOBZVPN ACCOUNT
+   NOOBZVPN ACCOUNT
 ◇━━━━━━━━━━━━━━━━━◇
 DOMAIN : $domain
 USERNAME : $user
@@ -94,25 +94,25 @@ EXP DAYS : $expi
 tcp_std port : 8080-8880
 tcp_ssl port : 8443
 ◇━━━━━━━━━━━━━━━━◇
-      TCP_STD 8080
+    TCP_STD 8080
 ◇━━━━━━━━━━━━━━━━◇
 
 EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVldGNLCXsFP3XfuuhmgsFMFK/RNdCJO1dF1LdAFlB4FSpoxofkIxg4/ot5WJVEGKPxuK7M3hm+93/8mTKR7LO196KrYbIcDbZtui7+g0u03le97wfPfnjHgd5YVflwaagi6T1PU2z5nXp0sLPrwKY5mdvmQu2QVAiMGE/ZqdjM1m2kcYDaecChWbLz4FiMVQBjEqa5G4h7zjBmxBtXFpWvOyApTfPIKK44eBHxKoLc7FXjaEFw7ONqexhB3svRPND1XR9VtkISZLEwrXQPPv1OO2pzOaS7unutCaP7pxQoTaChCn9Z2tN5tKDn8UsB/p8ouoLZPH4g83fYzO28dV2SC064+S3PLo6MlZxmlGuBUdhPuKgrfK+Rbejas7Z8GnCglJLUyTcwuynoFQiNVqiP64hMnvB9hSNl6YDQeST20ydA8dMIG7Jg8PJ52MRO5GIxNwl9y3ut7mPrn/+ia+rgoH+kz4mww6SBEy15TeXss7ZMYZcGj7A1vtTFOfCBvvqRgBxpQ6ZPcPX2+ohuC16/fQ==
 
 ◇━━━━━━━━━━━━━━━━◇
-      TCP_SSL 8443
+    TCP_SSL 8443
 ◇━━━━━━━━━━━━━━━━◇
 
 EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP
 
 ◇━━━━━━━━━━━━━━━━━◇
-    • JABAR TUNNELING • 
+   •JABAR TUNNELING• 
 ◇━━━━━━━━━━━━━━━━━◇
 END
 if [[ -e /etc/noobz ]]; then
 TEXT="
 ◇━━━━━━━━━━━━━━━━━◇
-     NOOBZVPN ACCOUNT
+    NOOBZVPN ACCOUNT
 ◇━━━━━━━━━━━━━━━━━◇
 DOMAIN : <code>$domain</code>
 USERNAME : <code>$user</code>
@@ -134,13 +134,13 @@ tcp_ssl port : 8443-443
 <code>EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-    • 🤖@jabar_putra • 
+  • 🤖@jabar_putra • 
 ◇━━━━━━━━━━━━━━━━━◇
 "
 else
 TEXT="
 ◇━━━━━━━━━━━━━━━━━◇
-     NOOBZVPN ACCOUNT
+    NOOBZVPN ACCOUNT
 ◇━━━━━━━━━━━━━━━━━◇
 DOMAIN : <code>$domain</code>
 USERNAME : <code>$user</code>
@@ -150,19 +150,19 @@ EXP DAYS : $expi
 tcp_std port :  8080
 tcp_ssl port : 8443
 ◇━━━━━━━━━━━━━━━━━◇
-       TCP_STD 8080
+     TCP_STD 8080
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EB4cHVzsbaIHhGlETDO+Ck22fVlOm01SEuUAUWIilUiZj3ho/GZ5QY+Fdur7EGcHtimx0bRpPkPYSUVldGNLCXsFP3XfuuhmgsFMFK/RNdCJO1dF1LdAFlB4FSpoxofkIxg4/ot5WJVEGKPxuK7M3hm+93/8mTKR7LO196KrYbIcDbZtui7+g0u03le97wfPfnjHgd5YVflwaagi6T1PU2z5nXp0sLPrwKY5mdvmQu2QVAiMGE/ZqdjM1m2kcYDaecChWbLz4FiMVQBjEqa5G4h7zjBmxBtXFpWvOyApTfPIKK44eBHxKoLc7FXjaEFw7ONqexhB3svRPND1XR9VtkISZLEwrXQPPv1OO2pzOaS7unutCaP7pxQoTaChCn9Z2tN5tKDn8UsB/p8ouoLZPH4g83fYzO28dV2SC064+S3PLo6MlZxmlGuBUdhPuKgrfK+Rbejas7Z8GnCglJLUyTcwuynoFQiNVqiP64hMnvB9hSNl6YDQeST20ydA8dMIG7Jg8PJ52MRO5GIxNwl9y3ut7mPrn/+ia+rgoH+kz4mww6SBEy15TeXss7ZMYZcGj7A1vtTFOfCBvvqRgBxpQ6ZPcPX2+ohuC16/fQ==</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-       TCP_SSL 8443
+     TCP_SSL 8443
 ◇━━━━━━━━━━━━━━━━━◇
 
 <code>EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP</code>
 
 ◇━━━━━━━━━━━━━━━━━◇
-    • JABAR TUNNELING • 
+   •JABAR TUNNELING• 
 ◇━━━━━━━━━━━━━━━━━◇
 "
 fi
@@ -190,7 +190,7 @@ TEXT2="
 <i>AutoNotif Create Akun From Server..</i>"
 curl -s --max-time $TIMES -d "chat_id=$CHATID2&disable_web_page_preview=1&text=$TEXT2&parse_mode=html" $URL2 >/dev/null
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
-echo -e " NOOBZVPN ACCOUNT " | tee -a /etc/xray/noobz/akun/log-create-${user}.log
+echo -e "  NOOBZVPN ACCOUNT " | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "DOMAIN : $( cat /etc/xray/domain )" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "USERNAME: $user" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
@@ -212,7 +212,7 @@ echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "EMLBHFZfH/pBoPKJNWEVgBpE6A5ZeWbnzpI4w7UFL3EEDLbefWsxq308yXcLl9+eH0CAwm6hLFDAIEZtscw6w090SyqPTK1iZxg/XVhQupV+3gkyTy/t3OeJcEGNfgOGuBGi5HVxQNiBrKIo8gQnVnR5oDVf80HbwVUHYNiayk9B8cqGRlr8bHTMs6GcevwhgWRUhOYitN20pcF91SXkQd86eIFfMVVFpM2MkRqOiL4+ZWS1GrH+r4YVC69Q50xyZAfUm+Ps17bY3hH7qcha1o2OD8RhjYqGnRzJDJEh7tfnDG6GyLgKPk+A8wxLkd+oTDKOMMsEyFA6x2NolzEYNYIsn5C2QBlEm5NAb8RJmCkFVL+L+ekiUp0NvkIRSjhVbhcl/n1CkBWkcOPYLCwyIagNJrCoD6vkoGzprqS3IAbj7RkOQqmLquAlfeEgDk6UJao/BZaoZeeIlfhDgfATDZiooLECs/h+0/2Vff1E5wnoHovDDo3FZW8xbxXXazHWdYWg8BOU3sATfhnbZd6uWsPmAg6r3jGynibibNbO1r/n88vbvB8Au319VN8KRLI4FhPc/Z9KG+njTJkmiLoG33SbPU7fF8AP" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo "" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
-echo -e " • JABAR TUNNELING • " | tee -a /etc/xray/noobz/akun/log-create-${user}.log
+echo -e "  •JABAR TUNNELING• " | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 echo -e "◇━━━━━━━━━━━━━━━━━◇" | tee -a /etc/xray/noobz/akun/log-create-${user}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
