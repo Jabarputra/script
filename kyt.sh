@@ -30,7 +30,7 @@ cd /usr/bin
 pip3 install -r kyt/requirements.txt
 #isi data
 echo ""
-figlet  Jabar Tunneling  | lolcat
+figlet Jabar Tunneling | lolcat
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[1;97;44;1m               ADD BOT PANEL            \e[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
